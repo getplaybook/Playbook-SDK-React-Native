@@ -1,19 +1,32 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, TouchableHighlight, Text } from 'react-native';
 import PlaybookSdk from 'react-native-playbook-sdk';
 
-
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
   React.useEffect(() => {
-    PlaybookSdk.multiply(3, 7).then(setResult);
+    PlaybookSdk.set(
+      '__sdk_token__',
+      '__user_id__',
+      ['__user_group_id__'],
+      'Acme Shop',
+      true
+    );
+    PlaybookSdk.extraSettings({
+      spinnerColor: '#FF0000',
+      mainColor: '#FF0000',
+      mainTitle: {
+        tr: 'Acme Sirketi',
+        en: 'Acme Company',
+      },
+    });
   }, []);
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <TouchableHighlight onPress={() => PlaybookSdk.showListView(true)}>
+        <Text>Show</Text>
+      </TouchableHighlight>
     </View>
   );
 }
@@ -23,10 +36,5 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
   },
 });

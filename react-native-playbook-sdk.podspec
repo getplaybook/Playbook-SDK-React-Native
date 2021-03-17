@@ -10,12 +10,13 @@ Pod::Spec.new do |s|
   s.license      = package["license"]
   s.authors      = package["author"]
 
-  s.platforms    = { :ios => "10.0" }
-  s.source       = { :git => "http://ss.com.git", :tag => "#{s.version}" }
+  s.platforms    = { :ios => "10.4" }
+  s.source       = { :git => "https://github.com/getplaybook/Playbook-SDK-React-Native.git", :tag => "#{s.version}" }
 
   
   s.source_files = "ios/**/*.{h,m,mm,swift}"
   
 
   s.dependency "React-Core"
+  s.dependency "PlaybookSDK", "~>1.4.2"
 end
