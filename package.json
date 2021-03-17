@@ -36,13 +36,13 @@
     "ios",
     "android"
   ],
-  "repository": "http://ss.com",
-  "author": "Playbook <hello@playboook.com> (http://getplaybook.io)",
+  "repository": "https://github.com/getplaybook/Playbook-SDK-React-Native.git",
+  "author": "Playbook <hello@getplayboook.io> (http://getplaybook.io)",
   "license": "Commercial",
   "bugs": {
-    "url": "http://ss.com/issues"
+    "url": "https://github.com/getplaybook/Playbook-SDK-React-Native/issues"
   },
-  "homepage": "http://ss.com#readme",
+  "homepage": "https://getplaybook.io",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
