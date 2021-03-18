@@ -1,6 +1,6 @@
 {
   "name": "react-native-playbook-sdk",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Playbook SDK Wrapper",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
