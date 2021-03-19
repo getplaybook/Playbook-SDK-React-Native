@@ -6,9 +6,9 @@ import PlaybookSdk from 'react-native-playbook-sdk';
 export default function App() {
   React.useEffect(() => {
     PlaybookSdk.set(
-      '971bd7e85a77e0e71b15a2607b380d9d0e0c941dcd209c46804e8139eeb4615a',
+      'PyL5rCxlwns78FoGjDi1AbQdNVBtqg00MUHz0Y2N5yqk22vmB0u5imFtE9ya',
       'user_0',
-      ['36'],
+      ['53'],
       'Acme Shop',
       true
     );

@@ -19,6 +19,7 @@ interface IPlaybookSDK {
     companyName: string,
     sandBox: Boolean
   ) => void;
+  setAvailableLangs: (langs: string[]) => void;
   extraSettings: (settings?: IPlaybookSettings) => void;
   showListView: (animated: Boolean) => void;
   showAcademyView: (animated: Boolean) => void;

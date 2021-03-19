@@ -23,6 +23,13 @@ class PlaybookSdk: NSObject {
             PlaybookSDK.extraSettings(extraSettings)
         }
     }
+    
+    @objc(setAvailableLangs:)
+    func setAvailableLangs(langs:[String]) -> Void {
+        PlaybookSDK.set(availableLocales: langs.map({ (lang) -> Locale in
+            Locale(identifier: lang)
+        }))
+    }
 
     @objc(showListView:)
     func showListView(animated:Bool=true) -> Void {
