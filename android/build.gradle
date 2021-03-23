@@ -134,5 +134,5 @@ dependencies {
   // noinspection GradleDynamicVersion
   api 'com.facebook.react:react-native:+'
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-  implementation 'io.getplaybook:SDK:1.4.2'
+  implementation 'io.getplaybook:SDK:1.4.3'
 }
